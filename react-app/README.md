@@ -31,15 +31,16 @@ This project was created to help represent a fundamental app written with React.
 
    ```bash
    cd api
-   ```
-   ```bash
    func start
    ```
+
+API typically opens on http://localhost:7071/api/products and reads from `../api/shared/products-data.js`
 
 ## Troubleshooting
 
 ### Error: Missing binding
 
+```text
 Failed to compile.
 
 ./src/styles.scss (./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--6-oneOf-5-3!./node_modules/sass-loader/dist/cjs.js??ref--6-oneOf-5-4!./src/styles.scss)
@@ -51,6 +52,10 @@ Found bindings for the following environments:
 
 This usually happens because your environment has changed since running `npm install`.
 Run `npm rebuild node-sass` to download the binding for your current environment.
+```
+
+The code doesn't work with Node 15 and needs at max Node 14. 
+Need to use NVM to install Node 14 and set it to default by using the answers [here](https://stackoverflow.com/questions/44700432/visual-studio-code-to-use-node-version-specified-by-nvm/66120222#66120222)
 ## Resources
 
 ### Azure Static Web Apps
