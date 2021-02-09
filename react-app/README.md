@@ -27,6 +27,30 @@ This project was created to help represent a fundamental app written with React.
    npm start
    ```
 
+1. Run the API
+
+   ```bash
+   cd api
+   ```
+   ```bash
+   func start
+   ```
+
+## Troubleshooting
+
+### Error: Missing binding
+
+Failed to compile.
+
+./src/styles.scss (./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--6-oneOf-5-3!./node_modules/sass-loader/dist/cjs.js??ref--6-oneOf-5-4!./src/styles.scss)
+Error: Missing binding /Users/nikolay/Documents/source/js/my-static-web-app/react-app/node_modules/node-sass/vendor/darwin-x64-83/binding.node
+Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 14.x
+
+Found bindings for the following environments:
+  - OS X 64-bit with Node.js 12.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
 ## Resources
 
 ### Azure Static Web Apps
