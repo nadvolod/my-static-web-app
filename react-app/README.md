@@ -38,6 +38,11 @@ API typically opens on http://localhost:7071/api/products and reads from `../api
 
 ## Troubleshooting
 
+### Azure Sandbox for coding
+
+Once you create a Sandbox, use it until you finish a module. Otherwise, you will need to restart 
+from [here](https://docs.microsoft.com/en-us/learn/modules/publish-static-web-app-api-preview-url/2-exercise-get-started?pivots=react)
+
 ### Error: Missing binding
 
 ```text
@@ -56,6 +61,21 @@ Run `npm rebuild node-sass` to download the binding for your current environment
 
 The code doesn't work with Node 15 and needs at max Node 14. 
 Need to use NVM to install Node 14 and set it to default by using the answers [here](https://stackoverflow.com/questions/44700432/visual-studio-code-to-use-node-version-specified-by-nvm/66120222#66120222)
+
+### Create Staging URL
+
+the GitHub bot adds a comment to your pull request, which contains the URL of the pre-production environment. You can click on this link to see your staged changes.
+
+### Constraints of Azure Static Apps API
+Azure Static Web Apps provides an API through Azure Functions. The capabilities of Azure Functions are focused to a specific set of features that enable you to create an API for a web app and allow the web app to connect to API securely. These features come with some constraints, including:
+
+The API route prefix must be api.
+The API must either be a JavaScript, C#, or Python Azure Functions app.
+Route rules for API functions only support redirects and securing routes with roles.
+Triggers are limited to HTTP.
+Input and output bindings are supported.
+Logs are only available if you add Application Insights to your Functions app.
+
 ## Resources
 
 ### Azure Static Web Apps
